@@ -1,0 +1,13 @@
+.rounded-40{
+    border-radius: 40px;
+}
+
+button{
+    &.primary{
+        background: var(--background-body);
+        color: var( --text-button);
+        border: 1px solid var(--text-button);
+        border-bottom:0;
+        
+    }
+}

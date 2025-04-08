@@ -1,0 +1,63 @@
+// Import partials or other SCSS files here
+// Example: @import './partials/_variables.scss';
+:root{
+--white-background: #ffffff;
+--type-color:#1d1c20;
+--active-color:#A3DC2F;
+--background-body:#f6f6f6;
+--text-button:#1d1c20;
+--header-color: #1d1c20;
+--p-color:#828282;
+}
+// *{
+//     transition: all 0.3s ease-in-out;
+// }
+img.white{
+    display: none;
+   }
+  
+.dark-theme {
+    --white-background: #0f0f0f;
+    --type-color:#9B9CA1;
+    --active-color:#A3DC2F;
+    --background-body:#1d1c20;
+    --text-button:#ffffff;
+    --header-color: var(--active-color);
+
+   img.white{
+    display: block
+   }
+   img.dark{
+    display: none
+   }
+  }
+  
+html{
+    
+
+}
+// Global styles
+@import 'grid.scss';
+@import 'navBar.scss';
+@import 'buttons.scss';
+@import 'header.scss';
+@import 'responsive.scss';
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-body);
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button{
+    cursor: pointer;
+}
